@@ -3,7 +3,7 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/5 * * * TUE'
 jobs:
-  check_free_games:
+  check_showings:
     name: Check Epic Games Freebies
     runs-on: ubuntu-latest
     steps:
