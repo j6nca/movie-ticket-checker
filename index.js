@@ -25,7 +25,7 @@ async function check_showtimes() {
   const res = await axios.get(showtimes_endpoint, config);
   const res_json = res.data
   console.log(res_json)
-  if (res_json != "\"\""){
+  if (res_json != "\"\"" && res_json != null && res_json != ""){
     const theatre_name = res_json[0].theatre
     console.log(theatre_name)
     const showings = res_json[0].dates[0].movies[0].experiences[0].sessions
