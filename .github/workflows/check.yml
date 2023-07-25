@@ -4,7 +4,7 @@ on:
     - cron:  '*/5 * * * TUE'
 jobs:
   check_showings:
-    name: Check Epic Games Freebies
+    name: Check Cineplex Showings
     runs-on: ubuntu-latest
     steps:
 
