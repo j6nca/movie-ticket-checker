@@ -35,8 +35,6 @@ async function check_showtimes() {
     console.log(movie_name)
     const movie_poster = res_json[0].dates[0].movies[0].smallPosterImageUrl
     console.log(movie_poster)
-
-    
     send_discord(showings, movie_name, movie_poster)
   }else{
     console.log(`No showings available yet for ${date}`)
